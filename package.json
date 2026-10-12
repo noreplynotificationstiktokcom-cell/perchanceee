@@ -1,0 +1,12 @@
+{
+  "name": "perchance-local-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local REST API backed by the Perchance Image API browser bridge",
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test"
+  }
+}

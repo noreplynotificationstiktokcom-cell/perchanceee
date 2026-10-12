@@ -1,0 +1,7 @@
+.env
+logs/
+output/
+node_modules/
+*.log
+*-test.jpg
+bridge-connected.jpg

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perchance API</title>
+  <link rel="stylesheet" href="/bridge.css">
+  <script type="module" src="/bridge.mjs"></script>
+</head>
+<body>
+  <header><h1>Perchance API</h1><span id="status" role="status">Ch&#432;a k&#7871;t n&#7889;i</span></header>
+  <main>
+    <form id="connect-form">
+      <label for="api-key">API key</label>
+      <div class="connection"><input id="api-key" type="password" autocomplete="off" placeholder="&#272;&#7875; tr&#7889;ng khi ch&#7841;y local"><button id="connect" type="submit">K&#7871;t n&#7889;i</button><button id="disconnect" type="button" disabled>Ng&#7855;t k&#7871;t n&#7889;i</button></div>
+    </form>
+    <dl><div><dt>Endpoint</dt><dd><code id="endpoint"></code></dd></div><div><dt>Tr&#7841;ng th&#225;i</dt><dd id="activity" aria-live="polite">&#272;ang ch&#7901; k&#7871;t n&#7889;i</dd></div><div><dt>&#272;&#227; x&#7917; l&#253;</dt><dd id="count">0</dd></div></dl>
+    <p id="error" role="alert" hidden></p>
+    <div id="frame-container"></div>
+  </main>
+</body>
+</html>

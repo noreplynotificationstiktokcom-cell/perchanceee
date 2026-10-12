@@ -1,0 +1,24 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #202423; background: #f6f7f8; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+header { padding: 20px 28px; display: flex; justify-content: space-between; align-items: center; gap: 16px; border-bottom: 1px solid #d9dedf; background: #fff; }
+h1 { font-size: 22px; margin: 0; letter-spacing: 0; }
+#status { font-size: 14px; color: #606b70; }
+#status[data-connected="true"] { color: #197342; }
+main { max-width: 1040px; margin: 0 auto; padding: 28px; }
+label { display: block; font-size: 14px; margin-bottom: 8px; }
+.connection { display: flex; flex-wrap: wrap; gap: 10px; }
+input, button { min-height: 42px; border: 1px solid #c6cdd1; border-radius: 5px; padding: 9px 12px; font: inherit; font-size: 14px; }
+input { flex: 1; min-width: 180px; background: #fff; }
+button { cursor: pointer; color: #fff; background: #176442; border-color: #176442; }
+#disconnect { background: #fff; color: #444c50; border-color: #c6cdd1; }
+button:disabled { opacity: .5; cursor: default; }
+input:focus-visible, button:focus-visible { outline: 2px solid #235bb8; outline-offset: 3px; }
+dl { margin: 28px 0; }
+dl > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid #d9dedf; }
+dt { color: #606b70; font-size: 14px; }
+dd { margin: 0; overflow-wrap: anywhere; font-size: 14px; }
+#error { color: #a32424; white-space: pre-wrap; overflow-wrap: anywhere; }
+#frame-container:empty { display: none; }
+iframe { display: block; width: 100%; height: 520px; border: 1px solid #c6cdd1; background: #fff; }
+@media (max-width: 520px) { header { padding: 16px; } main { padding: 20px 16px; } .connection input { flex-basis: 100%; } dl > div { grid-template-columns: 85px minmax(0, 1fr); } }
